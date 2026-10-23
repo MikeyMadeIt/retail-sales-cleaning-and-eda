@@ -28,5 +28,16 @@ deterministic: two runs produce byte-identical clean CSVs.
 
 ## Provenance
 
-Source: Kaggle (add the dataset URL, author and licence here, and the date you downloaded it).
+Source: Kaggle (https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset).
 The file is included as `data/raw/retail_store_sales.csv`.
+
+## Exploratory analysis (task 2)
+
+| Path | Purpose |
+|---|---|
+| `notebooks/01_january_effect.ipynb` | Executed notebook: data-collection checks, test registry, hypothesis, robustness, disproved patterns, hold-out |
+| `notebooks/01_january_effect.py` | Same analysis as a runnable percent-format script (source of truth) |
+| `notebooks/build_notebook.py` | Re-executes the script and rebuilds the notebook with outputs embedded: `python notebooks/build_notebook.py` |
+| `reports/findings_summary.pdf` | Two-page findings summary (`python reports/build_summary.py` to rebuild) |
+| `reports/figures/` | The four charts |
+
